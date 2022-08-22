@@ -1,5 +1,5 @@
 CREATE TABLE directors(
-  id SERIAL,
+  id SERIAL PRIMARY KEY,
   name VARCHAR(50)
 );
 
