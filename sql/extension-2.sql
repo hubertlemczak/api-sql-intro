@@ -26,3 +26,4 @@ UPDATE films SET director_id = 6 WHERE id IN(6, 7, 8);
 UPDATE films SET director_id = 12 WHERE id = 14;
 --
 
+SELECT string_agg(title, ', '), name AS director FROM films LEFT JOIN directors d ON director_id = d.id GROUP BY name;
